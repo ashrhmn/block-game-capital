@@ -1,0 +1,17 @@
+@mixin tablet-view {
+    @media screen and (min-width: 641px) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media screen and (min-width: 1401px) {
+        @content;
+    }
+}
+
+@mixin unlimited-view {
+    @media screen and (min-width: 2190px) {
+        @content;
+    }
+}

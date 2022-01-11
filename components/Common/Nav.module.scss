@@ -1,0 +1,38 @@
+@use "../../styles/media";
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 2rem;
+    .textlogo {
+        display: none;
+        @include media.tablet-view() {
+            display: block;
+        }
+    }
+    .logo {
+        @include media.tablet-view() {
+            display: none;
+        }
+    }
+    &_right {
+        display: flex;
+        align-items: center;
+        &_social {
+            display: none;
+            padding: 1rem;
+            gap: 0.5rem;
+            @include media.tablet-view() {
+                display: flex;
+            }
+        }
+        .btn_connect {
+            border: none;
+            background-color: #21ffff;
+            color: #1c0050;
+            font-size: 16px;
+            padding: 1rem 1.25rem;
+            border-radius: 10px;
+        }
+    }
+}
